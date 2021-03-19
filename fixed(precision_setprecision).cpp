@@ -8,7 +8,7 @@ int main()
 	float num = 12.34567;
 
 	cout.fixed;
-	cout << setprecision(10) << num << "\n"; //10자리수 고정출력
+	cout << setprecision(10) << num << "\n"; //자리수 정밀도 설정
 
 	cout.precision(2);               //가장 큰 자리수부터 2자리를 출력하겠다는 뜻
 	cout << num << endl;           //출력 : 12
