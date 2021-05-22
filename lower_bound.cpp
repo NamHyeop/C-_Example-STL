@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+//arr[mid - 1] < num && arr[mid] >= num
 
 int nh_lower_bound(int *arr, int len, int num)
 {
@@ -18,9 +19,12 @@ int nh_lower_bound(int *arr, int len, int num)
 	return end;
 }
 
-int main(void){
-	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 };
 
+int main(void)
+{
+	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 };
+	//시작은 0입니다.
+	
 	cout << "lower_bound(3) : " << lower_bound(arr, arr + 10, 3) - arr << endl;
 	cout << "lower_bound(4) : " << lower_bound(arr, arr + 10, 4) - arr << endl;
 	cout << "lower_bound(8) : " << lower_bound(arr, arr + 10, 8) - arr<< endl;
