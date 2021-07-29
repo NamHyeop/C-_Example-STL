@@ -7,6 +7,7 @@ int main()
 {
 	float num = 12.34567;
 
+	//cout의 기본 정밀도는 6으로 설정되어있다
 	cout.fixed; //.을 붙치면 정밀도를 설정하는것
 	cout << setprecision(10) << num << "\n"; //자리수 정밀도 설정
 
